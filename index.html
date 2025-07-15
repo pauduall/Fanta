@@ -34,6 +34,14 @@
       height: auto;
       border-radius: 5px;
     }
+    .horizontal-scroll-wrapper {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.horizontal-scroll-wrapper .card {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
     .order-button {
       display: inline-block;
       margin-top: 10px;
@@ -95,7 +103,34 @@
     </ul>
   </section>
 
-  <!-- GALLERY SECTION -->
+  <!-- GALLERY SECTION --><!-- GALLERY SECTION -->
+<section id="gallery" class="container">
+  <h3 class="text-center">Pick Your Style</h3>
+  <div class="horizontal-scroll-wrapper d-flex overflow-auto gap-3 py-3">
+    <div class="card" style="min-width: 250px;">
+      <img src="style1.jpg" class="card-img-top" alt="Style 1">
+      <div class="card-body">
+        <p class="card-text">Elegant Senator - Navy Blue</p>
+        <a href="https://wa.me/2349131310038" class="btn btn-warning btn-sm">Order This</a>
+      </div>
+    </div>
+    <div class="card" style="min-width: 250px;">
+      <img src="style2.jpg" class="card-img-top" alt="Style 2">
+      <div class="card-body">
+        <p class="card-text">Classic White - Embroidered</p>
+        <a href="https://wa.me/2349131310038" class="btn btn-warning btn-sm">Order This</a>
+      </div>
+    </div>
+    <div class="card" style="min-width: 250px;">
+      <img src="style3.jpg" class="card-img-top" alt="Style 3">
+      <div class="card-body">
+        <p class="card-text">Modern Agbada with Custom Prints</p>
+        <a href="https://wa.me/2349131310038" class="btn btn-warning btn-sm">Order This</a>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+</section>
   <section id="gallery" class="container">
     <h3 class="text-center">Pick Your Style</h3>
     <div class="row gallery-grid">
@@ -181,7 +216,7 @@
     <div class="social-links">
       <a href="https://facebook.com/UbadighaFrancisca">Facebook</a> |
       <a href="https://instagram.com/UbadighaFrancisca">Instagram</a> |
-      <a href="https://wa.me/2349131310038">WhatsApp</a>
+      <a href="https://wa.me/2349168507736">WhatsApp</a>
     </div>
   </footer>
 
